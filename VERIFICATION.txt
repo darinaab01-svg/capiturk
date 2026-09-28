@@ -1,0 +1,3 @@
+Local validation (Windows): Swift syntax parsing, project structure and content checks pass.
+Native compilation and XCTest status will be recorded after GitHub Actions finishes.
+Physical-iPhone microphone, voice availability and haptics have not been tested here.
