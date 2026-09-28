@@ -1,0 +1,12 @@
+{
+  "id": "./",
+  "name": "Capitürk — турецкий вместе с Капи",
+  "short_name": "Capitürk",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcf1eb",
+  "theme_color": "#fcf1eb",
+  "lang": "ru",
+  "icons": [{"src":"icon.png","sizes":"1024x1024","type":"image/png","purpose":"any"}]
+}

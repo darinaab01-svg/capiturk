@@ -1,0 +1,2623 @@
+{
+  "version": 2,
+  "lessons": [
+    {
+      "id": 0,
+      "title": "Merhaba! Первые слова",
+      "goal": "Поздороваться и ответить на простой вопрос",
+      "symbol": "hand.wave",
+      "newWords": [
+        {
+          "turkish": "merhaba",
+          "russian": "привет / здравствуйте",
+          "symbol": "hand.wave",
+          "example": "Merhaba!",
+          "exampleTranslation": "Привет!",
+          "pronunciation": "[мерхаба]"
+        },
+        {
+          "turkish": "günaydın",
+          "russian": "доброе утро",
+          "symbol": "sun.max",
+          "example": "Günaydın! Nasılsın?",
+          "exampleTranslation": "Доброе утро! Как дела?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "nasılsın?",
+          "russian": "как дела?",
+          "symbol": "bubble.left",
+          "example": "Nasılsın?",
+          "exampleTranslation": "Как дела?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "iyiyim",
+          "russian": "у меня всё хорошо",
+          "symbol": "face.smiling",
+          "example": "İyiyim, teşekkürler.",
+          "exampleTranslation": "У меня всё хорошо, спасибо.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "teşekkürler",
+          "russian": "спасибо",
+          "symbol": "heart",
+          "example": "İyiyim, teşekkürler.",
+          "exampleTranslation": "У меня всё хорошо, спасибо.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "evet",
+          "russian": "да",
+          "symbol": "checkmark.circle",
+          "example": "Evet, iyiyim.",
+          "exampleTranslation": "Да, у меня всё хорошо.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "hayır",
+          "russian": "нет",
+          "symbol": "xmark.circle",
+          "example": "Hayır, teşekkürler.",
+          "exampleTranslation": "Нет, спасибо.",
+          "pronunciation": null
+        }
+      ],
+      "extraWords": [
+        {
+          "turkish": "lütfen",
+          "russian": "пожалуйста",
+          "symbol": "hands.sparkles",
+          "example": "Lütfen.",
+          "exampleTranslation": "Пожалуйста.",
+          "pronunciation": null
+        }
+      ],
+      "reviewWords": [],
+      "phrases": [
+        {
+          "turkish": "Merhaba!",
+          "russian": "Привет!"
+        },
+        {
+          "turkish": "Nasılsın?",
+          "russian": "Как дела?"
+        },
+        {
+          "turkish": "İyiyim, teşekkürler.",
+          "russian": "У меня всё хорошо, спасибо."
+        }
+      ],
+      "miniDialogue": [
+        {
+          "role": "capi",
+          "turkish": "Merhaba!",
+          "russian": "Привет!"
+        },
+        {
+          "role": "you",
+          "turkish": "Merhaba!",
+          "russian": "Привет!"
+        },
+        {
+          "role": "capi",
+          "turkish": "Nasılsın?",
+          "russian": "Как дела?"
+        },
+        {
+          "role": "you",
+          "turkish": "İyiyim, teşekkürler.",
+          "russian": "У меня всё хорошо, спасибо."
+        }
+      ],
+      "result": "Ты уже можешь поздороваться и ответить на простой вопрос.",
+      "exercises": [
+        {
+          "id": "l0-1",
+          "kind": "scene",
+          "title": "Маленькая история",
+          "prompt": "Капи рада знакомству. Merhaba — одна из самых частых фраз, которую ты услышишь в Турции.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba!",
+          "symbol": "hand.wave"
+        },
+        {
+          "id": "l0-2",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "merhaba"
+        },
+        {
+          "id": "l0-3",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Что значит merhaba?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "спасибо"
+            },
+            {
+              "id": "1",
+              "text": "привет"
+            },
+            {
+              "id": "2",
+              "text": "пока"
+            },
+            {
+              "id": "3",
+              "text": "пожалуйста"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-4",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "günaydın"
+        },
+        {
+          "id": "l0-5",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Как пожелать доброго утра?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "1",
+              "text": "Günaydın!"
+            },
+            {
+              "id": "2",
+              "text": "Teşekkürler!"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-6",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "nasılsın?"
+        },
+        {
+          "id": "l0-7",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "iyiyim"
+        },
+        {
+          "id": "l0-8",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "teşekkürler"
+        },
+        {
+          "id": "l0-9",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "İyiyim, teşekkürler.",
+          "translation": "У меня всё хорошо, спасибо."
+        },
+        {
+          "id": "l0-10",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "evet"
+        },
+        {
+          "id": "l0-11",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "hayır"
+        },
+        {
+          "id": "l0-12",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "lütfen"
+        },
+        {
+          "id": "l0-13",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Как сказать «да»?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "hayır"
+            },
+            {
+              "id": "1",
+              "text": "evet"
+            },
+            {
+              "id": "2",
+              "text": "lütfen"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-14",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Как сказать «нет»?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "evet"
+            },
+            {
+              "id": "1",
+              "text": "hayır"
+            },
+            {
+              "id": "2",
+              "text": "merhaba"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-15",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Что ты услышала?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Teşekkürler.",
+          "options": [
+            {
+              "id": "0",
+              "text": "привет"
+            },
+            {
+              "id": "1",
+              "text": "спасибо"
+            },
+            {
+              "id": "2",
+              "text": "да"
+            },
+            {
+              "id": "3",
+              "text": "нет"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-16",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "У меня всё хорошо, спасибо.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "İyiyim, teşekkürler.",
+          "tokens": [
+            "teşekkürler",
+            "İyiyim",
+            ","
+          ]
+        },
+        {
+          "id": "l0-17",
+          "kind": "speak",
+          "title": "Скажи вслух",
+          "prompt": "Послушай образец. Попробуй повторить, не стремясь к идеальному произношению.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba! Nasılsın?",
+          "translation": "Привет! Как дела?"
+        },
+        {
+          "id": "l0-18",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba!",
+          "translation": "Привет!",
+          "options": [
+            {
+              "id": "0",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "1",
+              "text": "Hayır."
+            },
+            {
+              "id": "2",
+              "text": "Teşekkürler."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l0-19",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Nasılsın?",
+          "translation": "Как дела?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Lütfen."
+            },
+            {
+              "id": "1",
+              "text": "İyiyim, teşekkürler."
+            },
+            {
+              "id": "2",
+              "text": "Günaydın!"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-20",
+          "kind": "dialogue",
+          "title": "Поздоровайся сама",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": true,
+          "hideTranslation": true,
+          "text": "Merhaba!",
+          "translation": null,
+          "options": [
+            {
+              "id": "0",
+              "text": "Hayır."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "2",
+              "text": "Lütfen."
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l0-21",
+          "kind": "dialogue",
+          "title": "Ответь без перевода",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": true,
+          "hideTranslation": true,
+          "text": "Nasılsın?",
+          "translation": null,
+          "options": [
+            {
+              "id": "0",
+              "text": "İyiyim, teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Hayır."
+            },
+            {
+              "id": "2",
+              "text": "Lütfen."
+            }
+          ],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Закажем кофе",
+      "goal": "Сделать простой заказ и попросить счёт",
+      "symbol": "cup.and.saucer",
+      "newWords": [
+        {
+          "turkish": "kahve",
+          "russian": "кофе",
+          "symbol": "cup.and.saucer",
+          "example": "Kahve istiyorum.",
+          "exampleTranslation": "Я хочу кофе.",
+          "pronunciation": "[кахве]"
+        },
+        {
+          "turkish": "çay",
+          "russian": "чай",
+          "symbol": "mug",
+          "example": "Çay istiyorum.",
+          "exampleTranslation": "Я хочу чай.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "su",
+          "russian": "вода",
+          "symbol": "drop",
+          "example": "Su istiyorum.",
+          "exampleTranslation": "Я хочу воду.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "yemek",
+          "russian": "еда",
+          "symbol": "fork.knife",
+          "example": "Yemek istiyorum.",
+          "exampleTranslation": "Я хочу еду.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "hesap",
+          "russian": "счёт",
+          "symbol": "doc.text",
+          "example": "Hesap, lütfen.",
+          "exampleTranslation": "Счёт, пожалуйста.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "istemek",
+          "russian": "хотеть",
+          "symbol": "heart",
+          "example": "Kahve istiyorum.",
+          "exampleTranslation": "Я хочу кофе. istiyorum = я хочу.",
+          "pronunciation": null
+        }
+      ],
+      "extraWords": [],
+      "reviewWords": [
+        "merhaba",
+        "teşekkürler",
+        "lütfen"
+      ],
+      "phrases": [
+        {
+          "turkish": "Kahve istiyorum.",
+          "russian": "Я хочу кофе."
+        },
+        {
+          "turkish": "Bir kahve, lütfen.",
+          "russian": "Один кофе, пожалуйста."
+        },
+        {
+          "turkish": "Bir çay, lütfen.",
+          "russian": "Один чай, пожалуйста."
+        },
+        {
+          "turkish": "Hesap, lütfen.",
+          "russian": "Счёт, пожалуйста."
+        }
+      ],
+      "miniDialogue": [
+        {
+          "role": "capi",
+          "turkish": "Merhaba.",
+          "russian": "Здравствуйте."
+        },
+        {
+          "role": "you",
+          "turkish": "Merhaba.",
+          "russian": "Здравствуйте."
+        },
+        {
+          "role": "capi",
+          "turkish": "Ne istersiniz?",
+          "russian": "Что будете?"
+        },
+        {
+          "role": "you",
+          "turkish": "Bir kahve, lütfen.",
+          "russian": "Один кофе, пожалуйста."
+        },
+        {
+          "role": "capi",
+          "turkish": "Tabii.",
+          "russian": "Конечно."
+        },
+        {
+          "role": "you",
+          "turkish": "Teşekkürler.",
+          "russian": "Спасибо."
+        }
+      ],
+      "result": "Теперь ты можешь сделать простой заказ в кафе.",
+      "exercises": [
+        {
+          "id": "l1-1",
+          "kind": "scene",
+          "title": "Маленькая история",
+          "prompt": "Ты в кафе. Попробуем сделать первый заказ на турецком.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba!",
+          "symbol": "cup.and.saucer"
+        },
+        {
+          "id": "l1-2",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Вспомним: как сказать «пожалуйста»?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "teşekkürler"
+            },
+            {
+              "id": "1",
+              "text": "lütfen"
+            },
+            {
+              "id": "2",
+              "text": "hayır"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-3",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "kahve"
+        },
+        {
+          "id": "l1-4",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "çay"
+        },
+        {
+          "id": "l1-5",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "su"
+        },
+        {
+          "id": "l1-6",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Нажми на чай.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "kahve",
+              "symbol": "cup.and.saucer"
+            },
+            {
+              "id": "1",
+              "text": "çay",
+              "symbol": "mug"
+            },
+            {
+              "id": "2",
+              "text": "su",
+              "symbol": "drop"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-7",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Как это будет по-турецки?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "kahve"
+            },
+            {
+              "id": "1",
+              "text": "çay"
+            },
+            {
+              "id": "2",
+              "text": "su"
+            },
+            {
+              "id": "3",
+              "text": "hesap"
+            }
+          ],
+          "answer": "2",
+          "symbol": "drop.fill"
+        },
+        {
+          "id": "l1-8",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "istemek"
+        },
+        {
+          "id": "l1-9",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "istiyorum = я хочу. Учим готовую форму.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Kahve istiyorum.",
+          "translation": "Я хочу кофе."
+        },
+        {
+          "id": "l1-10",
+          "kind": "gap",
+          "title": "Подставь слово",
+          "prompt": "Ты хочешь чай. Подставь нужное слово.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "___ istiyorum.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Kahve"
+            },
+            {
+              "id": "1",
+              "text": "Çay"
+            },
+            {
+              "id": "2",
+              "text": "Su"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-11",
+          "kind": "gap",
+          "title": "Подставь слово",
+          "prompt": "Теперь попроси воду.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "___ istiyorum.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Kahve"
+            },
+            {
+              "id": "1",
+              "text": "Çay"
+            },
+            {
+              "id": "2",
+              "text": "Su"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "id": "l1-12",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "yemek"
+        },
+        {
+          "id": "l1-13",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Что означает yemek?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "еда"
+            },
+            {
+              "id": "1",
+              "text": "вода"
+            },
+            {
+              "id": "2",
+              "text": "кофе"
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l1-14",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "bir = один. Так можно просто и естественно заказать кофе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Bir kahve, lütfen.",
+          "translation": "Один кофе, пожалуйста."
+        },
+        {
+          "id": "l1-15",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Bir çay, lütfen.",
+          "translation": "Один чай, пожалуйста."
+        },
+        {
+          "id": "l1-16",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Что заказали?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Bir çay, lütfen.",
+          "options": [
+            {
+              "id": "0",
+              "text": "кофе"
+            },
+            {
+              "id": "1",
+              "text": "чай"
+            },
+            {
+              "id": "2",
+              "text": "воду"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-17",
+          "kind": "speak",
+          "title": "Скажи вслух",
+          "prompt": "Послушай образец. Попробуй повторить, не стремясь к идеальному произношению.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Bir kahve, lütfen.",
+          "translation": "Один кофе, пожалуйста."
+        },
+        {
+          "id": "l1-18",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Эту фразу можно услышать от официанта.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Ne istersiniz?",
+          "translation": "Что будете?"
+        },
+        {
+          "id": "l1-19",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Tabii.",
+          "translation": "Конечно."
+        },
+        {
+          "id": "l1-20",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba.",
+          "translation": "Здравствуйте.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Merhaba."
+            },
+            {
+              "id": "1",
+              "text": "Hayır."
+            },
+            {
+              "id": "2",
+              "text": "Hesap, lütfen."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l1-21",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Ne istersiniz?",
+          "translation": "Что будете?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Bir kahve, lütfen."
+            },
+            {
+              "id": "2",
+              "text": "Merhaba!"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-22",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Tabii.",
+          "translation": "Конечно.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Hayır."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba."
+            },
+            {
+              "id": "2",
+              "text": "Teşekkürler."
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "id": "l1-23",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "hesap"
+        },
+        {
+          "id": "l1-24",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Hesap, lütfen.",
+          "translation": "Счёт, пожалуйста."
+        },
+        {
+          "id": "l1-25",
+          "kind": "dialogue",
+          "title": "Ты в кафе. Закажи кофе",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": true,
+          "hideTranslation": true,
+          "text": "Ne istersiniz?",
+          "translation": null,
+          "options": [
+            {
+              "id": "0",
+              "text": "Su istiyorum."
+            },
+            {
+              "id": "1",
+              "text": "Bir kahve, lütfen."
+            },
+            {
+              "id": "2",
+              "text": "Çay istiyorum."
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l1-26",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Заказ закончен. Попроси счёт.",
+          "isFinal": true,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Hesap, lütfen."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "2",
+              "text": "Kahve istiyorum."
+            }
+          ],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Я только приехала",
+      "goal": "Найти такси, отель или аэропорт",
+      "symbol": "suitcase.rolling",
+      "newWords": [
+        {
+          "turkish": "taksi",
+          "russian": "такси",
+          "symbol": "car",
+          "example": "Taksi nerede?",
+          "exampleTranslation": "Где такси?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "otel",
+          "russian": "отель",
+          "symbol": "bed.double",
+          "example": "Otel nerede?",
+          "exampleTranslation": "Где отель?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "havaalanı",
+          "russian": "аэропорт",
+          "symbol": "airplane",
+          "example": "Havaalanı nerede?",
+          "exampleTranslation": "Где аэропорт?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "bilet",
+          "russian": "билет",
+          "symbol": "ticket",
+          "example": "Bilet burada.",
+          "exampleTranslation": "Билет здесь.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "nerede",
+          "russian": "где",
+          "symbol": "location",
+          "example": "Taksi nerede?",
+          "exampleTranslation": "Где такси?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "burada",
+          "russian": "здесь",
+          "symbol": "mappin",
+          "example": "Taksi burada.",
+          "exampleTranslation": "Такси здесь.",
+          "pronunciation": null
+        }
+      ],
+      "extraWords": [
+        {
+          "turkish": "orada",
+          "russian": "там",
+          "symbol": "mappin.and.ellipse",
+          "example": "Otel orada.",
+          "exampleTranslation": "Отель там.",
+          "pronunciation": null
+        }
+      ],
+      "reviewWords": [
+        "merhaba",
+        "teşekkürler"
+      ],
+      "phrases": [
+        {
+          "turkish": "Taksi nerede?",
+          "russian": "Где такси?"
+        }
+      ],
+      "miniDialogue": [
+        {
+          "role": "you",
+          "turkish": "Taksi nerede?",
+          "russian": "Где такси?"
+        },
+        {
+          "role": "capi",
+          "turkish": "Burada.",
+          "russian": "Здесь."
+        },
+        {
+          "role": "you",
+          "turkish": "Teşekkürler.",
+          "russian": "Спасибо."
+        }
+      ],
+      "result": "Ты можешь спросить, где такси, и понять ответ «здесь».",
+      "exercises": [
+        {
+          "id": "l2-1",
+          "kind": "scene",
+          "title": "Маленькая история",
+          "prompt": "Ты прилетела в Турцию. Первое, что нужно — найти такси.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba!",
+          "symbol": "airplane"
+        },
+        {
+          "id": "l2-2",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Прежде чем спросить, поздоровайся.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "2",
+              "text": "Lütfen."
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l2-3",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "taksi"
+        },
+        {
+          "id": "l2-4",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "havaalanı"
+        },
+        {
+          "id": "l2-5",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "nerede"
+        },
+        {
+          "id": "l2-6",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Название места + nerede? — и вопрос готов.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Taksi nerede?",
+          "translation": "Где такси?"
+        },
+        {
+          "id": "l2-7",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Где такси?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Taksi nerede?",
+          "tokens": [
+            "taksi",
+            "nerede",
+            "?"
+          ]
+        },
+        {
+          "id": "l2-8",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "otel"
+        },
+        {
+          "id": "l2-9",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Где отель?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Otel nerede?",
+          "tokens": [
+            "Otel",
+            "nerede"
+          ]
+        },
+        {
+          "id": "l2-10",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Где аэропорт?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Havaalanı nerede?",
+          "tokens": [
+            "Havaalanı",
+            "nerede"
+          ]
+        },
+        {
+          "id": "l2-11",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "burada"
+        },
+        {
+          "id": "l2-12",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Taksi burada.",
+          "translation": "Такси здесь."
+        },
+        {
+          "id": "l2-13",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "bilet"
+        },
+        {
+          "id": "l2-14",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "orada"
+        },
+        {
+          "id": "l2-15",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Что значит bilet?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "билет"
+            },
+            {
+              "id": "1",
+              "text": "отель"
+            },
+            {
+              "id": "2",
+              "text": "такси"
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l2-16",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Как сказать «здесь»?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "orada"
+            },
+            {
+              "id": "1",
+              "text": "burada"
+            },
+            {
+              "id": "2",
+              "text": "nerede"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l2-17",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Что спросили?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Otel nerede?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Где отель?"
+            },
+            {
+              "id": "1",
+              "text": "Где аэропорт?"
+            },
+            {
+              "id": "2",
+              "text": "Где такси?"
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l2-18",
+          "kind": "speak",
+          "title": "Скажи вслух",
+          "prompt": "Послушай образец. Попробуй повторить, не стремясь к идеальному произношению.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Taksi nerede?",
+          "translation": "Где такси?"
+        },
+        {
+          "id": "l2-19",
+          "kind": "dialogue",
+          "title": "Спроси у Капи",
+          "prompt": "Ты ищешь такси. Выбери свой вопрос.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Otel nerede?"
+            },
+            {
+              "id": "1",
+              "text": "Taksi nerede?"
+            },
+            {
+              "id": "2",
+              "text": "Havaalanı nerede?"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l2-20",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Burada.",
+          "translation": "Здесь.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba!"
+            },
+            {
+              "id": "2",
+              "text": "Hayır."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l2-21",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Ты вышла из аэропорта. Спроси, где такси.",
+          "isFinal": true,
+          "hideTranslation": false,
+          "text": "Taksi nerede?",
+          "tokens": [
+            "Taksi",
+            "nerede"
+          ]
+        },
+        {
+          "id": "l2-22",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Какой ответ тебе дали?",
+          "isFinal": true,
+          "hideTranslation": false,
+          "text": "Burada.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Там."
+            },
+            {
+              "id": "1",
+              "text": "Здесь."
+            },
+            {
+              "id": "2",
+              "text": "Где?"
+            }
+          ],
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Куда идти?",
+      "goal": "Спросить дорогу и понять направление",
+      "symbol": "map",
+      "newWords": [
+        {
+          "turkish": "market",
+          "russian": "магазин",
+          "symbol": "basket",
+          "example": "Market nerede?",
+          "exampleTranslation": "Где магазин?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "eczane",
+          "russian": "аптека",
+          "symbol": "cross.case",
+          "example": "Eczane nerede?",
+          "exampleTranslation": "Где аптека?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "restoran",
+          "russian": "ресторан",
+          "symbol": "fork.knife",
+          "example": "Restoran nerede?",
+          "exampleTranslation": "Где ресторан?",
+          "pronunciation": null
+        },
+        {
+          "turkish": "sağ",
+          "russian": "право / правый",
+          "symbol": "arrow.right",
+          "example": "Sağda.",
+          "exampleTranslation": "Справа. Запомни sağda целиком.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "sol",
+          "russian": "лево / левый",
+          "symbol": "arrow.left",
+          "example": "Solda.",
+          "exampleTranslation": "Слева. Запомни solda целиком.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "yakın",
+          "russian": "близко",
+          "symbol": "figure.walk",
+          "example": "Yakın mı?",
+          "exampleTranslation": "Это близко?",
+          "pronunciation": null
+        }
+      ],
+      "extraWords": [
+        {
+          "turkish": "uzak",
+          "russian": "далеко",
+          "symbol": "point.topleft.down.curvedto.point.bottomright.up",
+          "example": "Hayır, uzak.",
+          "exampleTranslation": "Нет, далеко.",
+          "pronunciation": null
+        }
+      ],
+      "reviewWords": [
+        "nerede",
+        "burada",
+        "evet",
+        "hayır"
+      ],
+      "phrases": [
+        {
+          "turkish": "Sağda.",
+          "russian": "Справа."
+        },
+        {
+          "turkish": "Solda.",
+          "russian": "Слева."
+        },
+        {
+          "turkish": "Yakın mı?",
+          "russian": "Это близко?"
+        }
+      ],
+      "miniDialogue": [
+        {
+          "role": "you",
+          "turkish": "Eczane nerede?",
+          "russian": "Где аптека?"
+        },
+        {
+          "role": "capi",
+          "turkish": "Sağda.",
+          "russian": "Справа."
+        },
+        {
+          "role": "you",
+          "turkish": "Yakın mı?",
+          "russian": "Это близко?"
+        },
+        {
+          "role": "capi",
+          "turkish": "Evet, çok yakın.",
+          "russian": "Да, очень близко."
+        }
+      ],
+      "result": "Ты можешь спросить дорогу и понять, куда идти.",
+      "exercises": [
+        {
+          "id": "l3-1",
+          "kind": "scene",
+          "title": "Маленькая история",
+          "prompt": "Капи раскрыла карту. Теперь попробуем не только спросить «где», но и понять ответ.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba!",
+          "symbol": "map"
+        },
+        {
+          "id": "l3-2",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Вспомним ответ из прошлого урока.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Burada.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Там."
+            },
+            {
+              "id": "1",
+              "text": "Здесь."
+            },
+            {
+              "id": "2",
+              "text": "Где?"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-3",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "eczane"
+        },
+        {
+          "id": "l3-4",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "market"
+        },
+        {
+          "id": "l3-5",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "restoran"
+        },
+        {
+          "id": "l3-6",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Где аптека?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Eczane nerede?",
+          "tokens": [
+            "Eczane",
+            "nerede"
+          ]
+        },
+        {
+          "id": "l3-7",
+          "kind": "gap",
+          "title": "Подставь слово",
+          "prompt": "Спроси, где ресторан.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "___ nerede?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Market"
+            },
+            {
+              "id": "1",
+              "text": "Restoran"
+            },
+            {
+              "id": "2",
+              "text": "Eczane"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-8",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "sağ"
+        },
+        {
+          "id": "l3-9",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "sol"
+        },
+        {
+          "id": "l3-10",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Пока просто запомни слово целиком.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Sağda.",
+          "translation": "Справа."
+        },
+        {
+          "id": "l3-11",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Solda.",
+          "translation": "Слева."
+        },
+        {
+          "id": "l3-12",
+          "kind": "map",
+          "title": "Найди направление",
+          "prompt": "Eczane nerede? Посмотри на карту и выбери ответ.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "direction": "right",
+          "mapTarget": "Eczane",
+          "options": [
+            {
+              "id": "0",
+              "text": "Solda.",
+              "symbol": "arrow.left"
+            },
+            {
+              "id": "1",
+              "text": "Sağda.",
+              "symbol": "arrow.right"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-13",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "yakın"
+        },
+        {
+          "id": "l3-14",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Yakın mı?",
+          "translation": "Это близко?"
+        },
+        {
+          "id": "l3-15",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "çok = очень. Знакомое evet означает «да».",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Evet, çok yakın.",
+          "translation": "Да, очень близко."
+        },
+        {
+          "id": "l3-16",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "uzak"
+        },
+        {
+          "id": "l3-17",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Что значит yakın?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "далеко"
+            },
+            {
+              "id": "1",
+              "text": "близко"
+            },
+            {
+              "id": "2",
+              "text": "справа"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-18",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Какое направление ты услышала?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Solda.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Направо",
+              "symbol": "arrow.right"
+            },
+            {
+              "id": "1",
+              "text": "Налево",
+              "symbol": "arrow.left"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-19",
+          "kind": "speak",
+          "title": "Скажи вслух",
+          "prompt": "Послушай образец. Попробуй повторить, не стремясь к идеальному произношению.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Eczane nerede? Yakın mı?",
+          "translation": "Где аптека? Это близко?"
+        },
+        {
+          "id": "l3-20",
+          "kind": "dialogue",
+          "title": "Начни разговор",
+          "prompt": "Ты ищешь аптеку. Что спросишь?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Eczane nerede?"
+            },
+            {
+              "id": "1",
+              "text": "Taksi nerede?"
+            },
+            {
+              "id": "2",
+              "text": "Hesap, lütfen."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l3-21",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Sağda.",
+          "translation": "Справа.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Kahve istiyorum."
+            },
+            {
+              "id": "1",
+              "text": "Yakın mı?"
+            },
+            {
+              "id": "2",
+              "text": "Merhaba."
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l3-22",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Evet, çok yakın.",
+          "translation": "Да, очень близко.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Hayır."
+            },
+            {
+              "id": "2",
+              "text": "Eczane nerede?"
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l3-23",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Ты в городе. Спроси, где аптека.",
+          "isFinal": true,
+          "hideTranslation": false,
+          "text": "Eczane nerede?",
+          "tokens": [
+            "Eczane",
+            "nerede"
+          ]
+        },
+        {
+          "id": "l3-24",
+          "kind": "map",
+          "title": "Найди направление",
+          "prompt": "Найди аптеку на новой схеме. В какую сторону идти?",
+          "isFinal": true,
+          "hideTranslation": false,
+          "direction": "left",
+          "mapTarget": "Eczane",
+          "options": [
+            {
+              "id": "0",
+              "text": "Solda.",
+              "symbol": "arrow.left"
+            },
+            {
+              "id": "1",
+              "text": "Sağda.",
+              "symbol": "arrow.right"
+            }
+          ],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Расскажи о себе",
+      "goal": "Собрать свой первый маленький рассказ",
+      "symbol": "person.text.rectangle",
+      "newWords": [
+        {
+          "turkish": "ben",
+          "russian": "я",
+          "symbol": "person",
+          "example": "Ben Türkçe öğreniyorum.",
+          "exampleTranslation": "Я изучаю турецкий.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "ad",
+          "russian": "имя",
+          "symbol": "person.text.rectangle",
+          "example": "Benim adım {name}.",
+          "exampleTranslation": "Меня зовут {name}.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "yaşamak",
+          "russian": "жить",
+          "symbol": "house",
+          "example": "{cityLocative} yaşıyorum.",
+          "exampleTranslation": "Я живу {cityRussian}. yaşıyorum = я живу.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "çalışmak",
+          "russian": "работать",
+          "symbol": "briefcase",
+          "example": "Çalışıyorum.",
+          "exampleTranslation": "Я работаю.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "sevmek",
+          "russian": "любить",
+          "symbol": "heart",
+          "example": "{favorite} seviyorum.",
+          "exampleTranslation": "Я люблю {favoriteRussian}. seviyorum = я люблю.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "şehir",
+          "russian": "город",
+          "symbol": "building.2",
+          "example": "Antalya bir şehir.",
+          "exampleTranslation": "Анталья — город.",
+          "pronunciation": null
+        },
+        {
+          "turkish": "öğrenmek",
+          "russian": "учить / изучать",
+          "symbol": "book",
+          "example": "Türkçe öğreniyorum.",
+          "exampleTranslation": "Я изучаю турецкий. öğreniyorum = я изучаю.",
+          "pronunciation": null
+        }
+      ],
+      "extraWords": [],
+      "reviewWords": [
+        "merhaba",
+        "kahve",
+        "evet",
+        "teşekkürler"
+      ],
+      "phrases": [
+        {
+          "turkish": "Benim adım {name}.",
+          "russian": "Меня зовут {name}."
+        },
+        {
+          "turkish": "{cityLocative} yaşıyorum.",
+          "russian": "Я живу {cityRussian}."
+        },
+        {
+          "turkish": "{favorite} seviyorum.",
+          "russian": "Я люблю {favoriteRussian}."
+        },
+        {
+          "turkish": "Türkçe öğreniyorum.",
+          "russian": "Я изучаю турецкий."
+        }
+      ],
+      "miniDialogue": [
+        {
+          "role": "capi",
+          "turkish": "Merhaba! Adın ne?",
+          "russian": "Привет! Как тебя зовут?"
+        },
+        {
+          "role": "you",
+          "turkish": "Benim adım {name}.",
+          "russian": "Меня зовут {name}."
+        },
+        {
+          "role": "capi",
+          "turkish": "Nerede yaşıyorsun?",
+          "russian": "Где ты живёшь?"
+        },
+        {
+          "role": "you",
+          "turkish": "{cityLocative} yaşıyorum.",
+          "russian": "Я живу {cityRussian}."
+        },
+        {
+          "role": "capi",
+          "turkish": "Kahve seviyor musun?",
+          "russian": "Ты любишь кофе?"
+        },
+        {
+          "role": "you",
+          "turkish": "Evet!",
+          "russian": "Да!"
+        }
+      ],
+      "result": "Теперь ты уже можешь немного рассказать о себе на турецком.",
+      "exercises": [
+        {
+          "id": "l4-1",
+          "kind": "profile",
+          "title": "Твоя история",
+          "prompt": "Выбери имя, город и то, что тебе нравится. Можно использовать вымышленный профиль для практики.",
+          "isFinal": false,
+          "hideTranslation": false
+        },
+        {
+          "id": "l4-2",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "ben"
+        },
+        {
+          "id": "l4-3",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Что значит ben?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "ты"
+            },
+            {
+              "id": "1",
+              "text": "я"
+            },
+            {
+              "id": "2",
+              "text": "имя"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l4-4",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "ad"
+        },
+        {
+          "id": "l4-5",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Benim adım {name}.",
+          "translation": "Меня зовут {name}."
+        },
+        {
+          "id": "l4-6",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "yaşamak"
+        },
+        {
+          "id": "l4-7",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "yaşıyorum = я живу. Учим готовое выражение.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "{cityLocative} yaşıyorum.",
+          "translation": "Я живу {cityRussian}."
+        },
+        {
+          "id": "l4-8",
+          "kind": "build",
+          "title": "Собери фразу",
+          "prompt": "Я живу {cityRussian}.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "{cityLocative} yaşıyorum.",
+          "tokens": [
+            "{cityLocative}",
+            "yaşıyorum"
+          ]
+        },
+        {
+          "id": "l4-9",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "şehir"
+        },
+        {
+          "id": "l4-10",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "çalışmak"
+        },
+        {
+          "id": "l4-11",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Çalışıyorum.",
+          "translation": "Я работаю."
+        },
+        {
+          "id": "l4-12",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "sevmek"
+        },
+        {
+          "id": "l4-13",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Ещё один вариант для фразы о том, что тебе нравится.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Türkiye",
+          "translation": "Турция"
+        },
+        {
+          "id": "l4-14",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "{favorite} seviyorum.",
+          "translation": "Я люблю {favoriteRussian}."
+        },
+        {
+          "id": "l4-15",
+          "kind": "gap",
+          "title": "Подставь слово",
+          "prompt": "Скажи: «Я люблю чай».",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "___ seviyorum.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Kahve"
+            },
+            {
+              "id": "1",
+              "text": "Çay"
+            },
+            {
+              "id": "2",
+              "text": "Türkiye"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l4-16",
+          "kind": "gap",
+          "title": "Подставь слово",
+          "prompt": "Скажи: «Я люблю Турцию».",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "___ seviyorum.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Kahve"
+            },
+            {
+              "id": "1",
+              "text": "Çay"
+            },
+            {
+              "id": "2",
+              "text": "Türkiye"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "id": "l4-17",
+          "kind": "word",
+          "title": "Новое слово",
+          "prompt": "Послушай слово и пример. Повтори в своём темпе.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "word": "öğrenmek"
+        },
+        {
+          "id": "l4-18",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Türkçe = турецкий язык. Это одна из главных фраз твоего первого модуля.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Türkçe öğreniyorum.",
+          "translation": "Я изучаю турецкий."
+        },
+        {
+          "id": "l4-19",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Adın ne?",
+          "translation": "Как тебя зовут?"
+        },
+        {
+          "id": "l4-20",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Nerede yaşıyorsun?",
+          "translation": "Где ты живёшь?"
+        },
+        {
+          "id": "l4-21",
+          "kind": "phrase",
+          "title": "Полезная фраза",
+          "prompt": "Запомни выражение целиком — грамматика подождёт.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Kahve seviyor musun?",
+          "translation": "Ты любишь кофе?"
+        },
+        {
+          "id": "l4-22",
+          "kind": "listen",
+          "title": "Послушай и выбери",
+          "prompt": "Где живёт Алина?",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Benim adım Alina. Antalya'da yaşıyorum.",
+          "options": [
+            {
+              "id": "0",
+              "text": "İstanbul"
+            },
+            {
+              "id": "1",
+              "text": "Antalya"
+            },
+            {
+              "id": "2",
+              "text": "Ankara"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l4-23",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Merhaba! Adın ne?",
+          "translation": "Привет! Как тебя зовут?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Benim adım {name}."
+            },
+            {
+              "id": "1",
+              "text": "{cityLocative} yaşıyorum."
+            },
+            {
+              "id": "2",
+              "text": "Teşekkürler."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l4-24",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Nerede yaşıyorsun?",
+          "translation": "Где ты живёшь?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Türkçe öğreniyorum."
+            },
+            {
+              "id": "1",
+              "text": "{cityLocative} yaşıyorum."
+            },
+            {
+              "id": "2",
+              "text": "Kahve seviyorum."
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "id": "l4-25",
+          "kind": "dialogue",
+          "title": "Твой ход в диалоге",
+          "prompt": "Ответь собеседнику.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "text": "Kahve seviyor musun?",
+          "translation": "Ты любишь кофе? В этом мини-диалоге ответь «да».",
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Merhaba."
+            },
+            {
+              "id": "2",
+              "text": "Evet!"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "id": "l4-26",
+          "kind": "choice",
+          "title": "Выбери ответ",
+          "prompt": "Поблагодари Капи за разговор.",
+          "isFinal": false,
+          "hideTranslation": false,
+          "options": [
+            {
+              "id": "0",
+              "text": "Teşekkürler."
+            },
+            {
+              "id": "1",
+              "text": "Hayır."
+            },
+            {
+              "id": "2",
+              "text": "Lütfen."
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "l4-27",
+          "kind": "build",
+          "title": "Мой первый рассказ",
+          "prompt": "Собери рассказ: приветствие → имя → город → что любишь → турецкий язык.",
+          "isFinal": true,
+          "hideTranslation": false,
+          "text": "Merhaba! Benim adım {name}. {cityLocative} yaşıyorum. {favorite} seviyorum. Türkçe öğreniyorum.",
+          "tokens": [
+            "Merhaba!",
+            "Benim adım {name}.",
+            "{cityLocative} yaşıyorum.",
+            "{favorite} seviyorum.",
+            "Türkçe öğreniyorum."
+          ]
+        },
+        {
+          "id": "l4-28",
+          "kind": "speak",
+          "title": "А теперь — твоя история вслух",
+          "prompt": "Послушай образец. Попробуй повторить, не стремясь к идеальному произношению.",
+          "isFinal": true,
+          "hideTranslation": false,
+          "text": "Merhaba! Benim adım {name}. {cityLocative} yaşıyorum. {favorite} seviyorum. Türkçe öğreniyorum.",
+          "translation": "Привет! Меня зовут {name}. Я живу {cityRussian}. Я люблю {favoriteRussian}. Я изучаю турецкий."
+        }
+      ]
+    }
+  ],
+  "finalConversation": {
+    "id": 5,
+    "title": "Мой первый разговор",
+    "goal": "Пройти знакомые ситуации почти без подсказок",
+    "symbol": "bubble.left.and.bubble.right",
+    "newWords": [],
+    "extraWords": [],
+    "reviewWords": [
+      "merhaba",
+      "nasılsın?",
+      "iyiyim",
+      "teşekkürler",
+      "kahve",
+      "eczane"
+    ],
+    "phrases": [],
+    "miniDialogue": [],
+    "result": "Ты только начала, но уже можешь поддержать настоящий маленький разговор.",
+    "exercises": [
+      {
+        "id": "l5-1",
+        "kind": "dialogue",
+        "title": "Встреча с Капи",
+        "prompt": "Ответь собеседнику.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Merhaba!",
+        "translation": null,
+        "options": [
+          {
+            "id": "0",
+            "text": "Merhaba!"
+          },
+          {
+            "id": "1",
+            "text": "Hayır."
+          },
+          {
+            "id": "2",
+            "text": "Lütfen."
+          }
+        ],
+        "answer": "0"
+      },
+      {
+        "id": "l5-2",
+        "kind": "dialogue",
+        "title": "Твой ход в диалоге",
+        "prompt": "Ответь собеседнику.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Nasılsın?",
+        "translation": null,
+        "options": [
+          {
+            "id": "0",
+            "text": "Bir kahve, lütfen."
+          },
+          {
+            "id": "1",
+            "text": "İyiyim, teşekkürler."
+          },
+          {
+            "id": "2",
+            "text": "Sağda."
+          }
+        ],
+        "answer": "1"
+      },
+      {
+        "id": "l5-3",
+        "kind": "dialogue",
+        "title": "Твой ход в диалоге",
+        "prompt": "Ответь собеседнику.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Adın ne?",
+        "translation": null,
+        "options": [
+          {
+            "id": "0",
+            "text": "{cityLocative} yaşıyorum."
+          },
+          {
+            "id": "1",
+            "text": "Türkçe öğreniyorum."
+          },
+          {
+            "id": "2",
+            "text": "Benim adım {name}."
+          }
+        ],
+        "answer": "2"
+      },
+      {
+        "id": "l5-4",
+        "kind": "dialogue",
+        "title": "Твой ход в диалоге",
+        "prompt": "Ответь собеседнику.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Nerede yaşıyorsun?",
+        "translation": null,
+        "options": [
+          {
+            "id": "0",
+            "text": "{cityLocative} yaşıyorum."
+          },
+          {
+            "id": "1",
+            "text": "Benim adım {name}."
+          },
+          {
+            "id": "2",
+            "text": "Kahve seviyorum."
+          }
+        ],
+        "answer": "0"
+      },
+      {
+        "id": "l5-5",
+        "kind": "dialogue",
+        "title": "Снова в кафе",
+        "prompt": "Закажи один кофе.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Ne istersiniz?",
+        "translation": null,
+        "options": [
+          {
+            "id": "0",
+            "text": "Hesap, lütfen."
+          },
+          {
+            "id": "1",
+            "text": "Bir kahve, lütfen."
+          },
+          {
+            "id": "2",
+            "text": "Teşekkürler."
+          }
+        ],
+        "answer": "1"
+      },
+      {
+        "id": "l5-6",
+        "kind": "build",
+        "title": "Собери фразу",
+        "prompt": "Ты в городе. Спроси, где аптека.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Eczane nerede?",
+        "tokens": [
+          "Eczane",
+          "nerede"
+        ]
+      },
+      {
+        "id": "l5-7",
+        "kind": "listen",
+        "title": "Послушай и выбери",
+        "prompt": "Послушай ответ и выбери направление.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Sağda.",
+        "options": [
+          {
+            "id": "0",
+            "text": "Налево",
+            "symbol": "arrow.left"
+          },
+          {
+            "id": "1",
+            "text": "Направо",
+            "symbol": "arrow.right"
+          }
+        ],
+        "answer": "1"
+      },
+      {
+        "id": "l5-8",
+        "kind": "map",
+        "title": "Найди направление",
+        "prompt": "Проверь себя: где аптека на схеме?",
+        "isFinal": true,
+        "hideTranslation": true,
+        "direction": "right",
+        "mapTarget": "Eczane",
+        "options": [
+          {
+            "id": "0",
+            "text": "Solda.",
+            "symbol": "arrow.left"
+          },
+          {
+            "id": "1",
+            "text": "Sağda.",
+            "symbol": "arrow.right"
+          }
+        ],
+        "answer": "1"
+      },
+      {
+        "id": "l5-9",
+        "kind": "speak",
+        "title": "Маленький разговор — твоим голосом",
+        "prompt": "Произнеси знакомые фразы о себе. Здесь нет новых слов.",
+        "isFinal": true,
+        "hideTranslation": true,
+        "text": "Merhaba! Benim adım {name}. {cityLocative} yaşıyorum. {favorite} seviyorum. Türkçe öğreniyorum.",
+        "translation": null
+      }
+    ]
+  }
+}
