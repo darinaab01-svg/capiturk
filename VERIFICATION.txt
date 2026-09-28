@@ -1,3 +1,19 @@
-Local validation (Windows): Swift syntax parsing, project structure and content checks pass.
-Native compilation and XCTest status will be recorded after GitHub Actions finishes.
-Physical-iPhone microphone, voice availability and haptics have not been tested here.
+Capitürk native iOS verification — 2026-09-28
+
+GitHub Actions: https://github.com/darinaab01-svg/capiturk/actions/runs/36426738813
+Tested source commit: c908c3607421880969bc2017f08d20d8cabc55c9
+Runner: macOS 15, Xcode 16.4.
+
+PASS: xcodebuild build for generic/platform=iOS, CODE_SIGNING_ALLOWED=NO.
+PASS: xcodebuild test on an iPhone simulator. 14 XCTest cases, 0 failures.
+PASS: bundled curriculum, 32 active words, 15 phrase groups, 130 distinct exercises.
+PASS: lesson evidence/locks, incomplete completion rejection, resume, favorites/profile persistence model, migrations, streak and repeated lessons.
+PASS: Turkish transcript matching (letters, punctuation, apostrophes, missing/reordered/wrong words).
+PASS: twelve unique mascot asset names, all UIImage assets load; state precedence checks.
+PASS: local content validator including negative cases; all Swift files syntax parsed; Xcode project and XML parsed.
+
+After the tested commit, only documentation and the microphone permission description were clarified; Swift source, tests, assets and build configuration are unchanged. The final permission plist was parsed locally.
+
+Not performed: signed install on a physical iPhone, live Turkish speech recognition, microphone/haptic/voice playback on physical hardware, TestFlight upload. DEVICE_TESTS.md lists acceptance steps. iPhone execution requires user-specific Apple development signing.
+
+Speech recognition comparison verifies recognized words, not phonetic accent quality. Apple service availability and installed Turkish voices are device dependent; errors/permission refusal do not produce passing results.

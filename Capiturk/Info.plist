@@ -12,7 +12,7 @@
 <key>UILaunchScreen</key><dict/>
 <key>UIApplicationSceneManifest</key><dict><key>UIApplicationSupportsMultipleScenes</key><false/></dict>
 <key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string></array>
-<key>NSMicrophoneUsageDescription</key><string>Запиши своё произношение и сравни его с турецким образцом. Запись остаётся на устройстве.</string>
+<key>NSMicrophoneUsageDescription</key><string>Запиши турецкую фразу для прослушивания и проверки. Распознавание может использовать сервис Apple; запись удаляется при выходе из задания.</string>
 <key>NSSpeechRecognitionUsageDescription</key><string>Проверяем турецкую фразу по записи голоса. Если распознавание недоступно на устройстве, запись обрабатывает сервис Apple через интернет.</string>
 <key>ITSAppUsesNonExemptEncryption</key><false/>
 </dict></plist>
