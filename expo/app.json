@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Capitürk",
+    "slug": "capiturk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android"],
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.capiturk.preview" },
+    "plugins": [["expo-audio", { "microphonePermission": "Капи использует микрофон, чтобы ты могла записать и послушать свою турецкую речь.", "enableBackgroundPlayback": false, "enableBackgroundRecording": false }]]
+  }
+}

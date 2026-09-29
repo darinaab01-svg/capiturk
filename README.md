@@ -1,6 +1,14 @@
 # Capitürk — native iPhone app
 
-Capitürk is a Swift + SwiftUI iOS application. Open `Capiturk.xcodeproj` directly in Xcode. There is no web runtime, WebView, JavaScript app, PWA, package installation or generated-project prerequisite.
+## Открыть на iPhone через Expo Go
+
+**[QR-код и инструкция →](expo/README.md)**
+
+В папке `expo/` находится отдельная версия для просмотра через Expo Go: уроки, озвучка, запись голоса и живая Капи. Автоматическая проверка произношения остаётся в SwiftUI-приложении. QR работает, пока запущен сервер Expo на компьютере.
+
+## Native SwiftUI application
+
+The primary application is a Swift + SwiftUI iOS app. Open `Capiturk.xcodeproj` directly in Xcode. This Xcode target has no web runtime, WebView, JavaScript dependency, PWA, package installation or generated-project prerequisite. The separate React Native preview in `expo/` does not change the Xcode target.
 
 ## Run on a physical iPhone
 
