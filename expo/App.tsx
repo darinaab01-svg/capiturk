@@ -107,9 +107,26 @@ function LessonScreen({ lesson, exercise: e, step, profile, update, speak, stopS
   const context: Mood = lesson.id === 1 ? 'cafe' : lesson.id === 2 ? 'travel' : lesson.id === 3 ? 'city' : lesson.id === 4 ? 'profile' : 'learning';
   const mood: Mood = rs.isRecording ? 'speaking' : speaking || ps.playing ? 'listening' : result || (tokens.length || selected ? 'thinking' : e.kind === 'speak' ? 'speaking' : context);
   useEffect(() => { if (ps.didJustFinish) setHeardRecording(true); }, [ps.didJustFinish]);
-  useEffect(() => { alive.current = true; const sub = AppState.addEventListener('change', state => { if (state === 'background') { if (recorder.isRecording) void recorder.stop(); player.pause(); } }); return () => { alive.current = false; sub.remove(); if (recorder.isRecording) void recorder.stop(); }; }, []);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+      // Expo owns native audio disposal. Its hooks release the shared objects
+      // before this cleanup runs; even reading recorder.isRecording here crashes.
+    };
+  }, []);
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', state => {
+      if (state === 'background' && alive.current) {
+        if (recorder.isRecording) void finishRecording();
+        player.pause();
+      }
+    });
+    // A new recording replaces the player. Never retain the old released player.
+    return () => sub.remove();
+  }, [recorder, player]);
   useEffect(() => { if (rs.isRecording && rs.durationMillis >= 45000) void finishRecording(); }, [rs.durationMillis]);
-  async function finishRecording() { try { await recorder.stop(); await setAudioModeAsync({ allowsRecording: false, playsInSilentMode: true }); if (alive.current) setRecorded(recorder.uri); } catch { if (alive.current) Alert.alert('Запись не сохранена', 'Попробуй записать ещё раз.'); } }
+  async function finishRecording() { try { await recorder.stop(); if (!alive.current) return; const uri = recorder.uri; await setAudioModeAsync({ allowsRecording: false, playsInSilentMode: true }); if (alive.current) setRecorded(uri); } catch { if (alive.current) Alert.alert('Запись не сохранена', 'Попробуй записать ещё раз.'); } }
   async function toggleRecording() {
     if (busy) return; setBusy(true);
     try {
@@ -120,11 +137,12 @@ function LessonScreen({ lesson, exercise: e, step, profile, update, speak, stopS
       if (!permission.granted) { Alert.alert('Нужен доступ к микрофону', 'Разреши микрофон для Expo Go в настройках iPhone.', [{ text: 'Позже' }, { text: 'Открыть настройки', onPress: () => { void Linking.openSettings(); } }]); return; }
       setRecorded(null); setHeardRecording(false);
       await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
+      if (!alive.current) return;
       await recorder.prepareToRecordAsync();
       if (!alive.current) return;
       recorder.record();
       if (profile.haptics) void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    } catch { Alert.alert('Не удалось начать запись', 'Проверь микрофон и попробуй ещё раз.'); } finally { if (alive.current) setBusy(false); }
+    } catch { if (alive.current) Alert.alert('Не удалось начать запись', 'Проверь микрофон и попробуй ещё раз.'); } finally { if (alive.current) setBusy(false); }
   }
   function check() { const correct = e.kind === 'build' ? normalize(tokens.map(i => fill(e.tokens![i], profile)).join(' ')) === normalize(target) : selected === e.answer; setResult(correct ? 'correct' : 'retry'); feedback(correct); }
   const audio = (text: string) => { if (recorder.isRecording || busy) return; player.pause(); speak(text); };
@@ -147,3 +165,4 @@ function LessonScreen({ lesson, exercise: e, step, profile, update, speak, stopS
 const s = StyleSheet.create({
   content: { paddingHorizontal: 24, paddingBottom: 32, gap: 16 }, header: { paddingHorizontal: 24, paddingVertical: 14, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }, logo: { fontSize: 24, color: '#24364C', letterSpacing: -1 }, smallTag: { fontSize: 8, letterSpacing: 1.1, color: '#8E817D', maxWidth: 130 }, eyebrow: { fontSize: 10, letterSpacing: 2, color: '#BC7969', marginTop: 14 }, title: { fontSize: 30, lineHeight: 36, fontWeight: '600', color: '#23354B', letterSpacing: -.8 }, subtitle: { fontSize: 16, lineHeight: 23, color: '#818087' }, body: { fontSize: 16, lineHeight: 23, color: '#344054' }, caption: { fontSize: 12, lineHeight: 18, color: '#87828A' }, label: { fontSize: 17, fontWeight: '600', color: '#2A3B53', lineHeight: 24 }, center: { textAlign: 'center' }, mascot: { height: 275, width: '100%', borderRadius: 36 }, card: { padding: 20, backgroundColor: '#FFFCF8DD', borderRadius: 26, gap: 12, borderWidth: 1, borderColor: '#FFFFFFCC' }, button: { backgroundColor: peach, paddingVertical: 18, paddingHorizontal: 20, borderRadius: 28, alignItems: 'center', minHeight: 55 }, softButton: { backgroundColor: '#FBD7C7' }, buttonText: { fontSize: 17, color: '#FFF', fontWeight: '600' }, audio: { alignItems: 'center', paddingVertical: 10, gap: 3, minHeight: 50 }, audioText: { fontSize: 24, lineHeight: 31, color: '#293F57', textAlign: 'center', fontWeight: '500' }, row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 }, pill: { backgroundColor: '#FCE2D7', color: '#A56353', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 14, fontSize: 12 }, stats: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 10 }, nav: { flexDirection: 'row', backgroundColor: '#FFFCF8EF', borderTopWidth: 1, borderColor: '#F1DDD5', paddingTop: 9, paddingBottom: 5 }, navItem: { flex: 1, alignItems: 'center', gap: 3, padding: 4 }, navIcon: { fontSize: 26, color: '#ABA3A1' }, navText: { fontSize: 10, color: '#928B89' }, courseCard: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: '#FFFBF7CF', borderRadius: 26, padding: 12 }, thumb: { width: 80, height: 90, borderRadius: 24 }, back: { fontSize: 32, color: '#BA8677', minWidth: 32 }, section: { fontSize: 20, color: '#324057', fontWeight: '600', marginVertical: 18 }, big: { fontSize: 42, color: '#35435B', fontWeight: '500' }, wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 }, chip: { paddingVertical: 13, paddingHorizontal: 18, backgroundColor: '#FFFCF9', borderRadius: 20, borderColor: '#F3E5DF', borderWidth: 1 }, selected: { backgroundColor: '#FCDCCD', borderColor: '#F3AE96' }, input: { color: '#283B51', fontSize: 19, borderBottomColor: '#E7B4A4', borderBottomWidth: 1, padding: 12 }, progress: { height: 5, borderRadius: 6, backgroundColor: '#E5DBD7', flex: 1, overflow: 'hidden' }, progressFill: { height: '100%', backgroundColor: peach, borderRadius: 6 }, option: { padding: 18, backgroundColor: '#FFFCF8', borderWidth: 1, borderColor: '#F5E8E2', borderRadius: 22 }, meter: { height: 6, backgroundColor: '#F5E4DC', borderRadius: 6, overflow: 'hidden' },
 });
+
