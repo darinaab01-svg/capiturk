@@ -20,10 +20,18 @@ for (const l of lessons) {
     if (e.kind === 'speak') assert(e.text?.length > 0);
   }
 }
-for (const state of ['welcome','learning','listening','speaking','thinking','correct','retry','cafe','travel','city','profile','celebration']) assert(fs.statSync(path.join(__dirname, '..', 'assets', `${state}.png`)).size > 10000);
+const manifest = require('../assets/mascot/manifest.json');
+assert.equal(manifest.length, 14);
+for (const item of manifest) {
+  const bytes = fs.readFileSync(path.join(__dirname, '..', 'assets', 'mascot', `${item.state}.webp`));
+  assert.equal(bytes.length, item.bytes);
+  assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
+  assert.equal(bytes.toString('ascii', 12, 16), 'VP8X');
+  assert(bytes[20] & 16, `${item.state} must preserve transparency`);
+}
 assert.equal(lessons.length, 6);
 assert.equal(ids.size, 130);
-console.log(`PASS: ${lessons.length} lessons, ${ids.size} reachable steps, all word references, answers, build tokens, 12 mascot assets.`);
+console.log(`PASS: ${lessons.length} lessons, ${ids.size} reachable steps, all word references, answers, build tokens, 14 transparent mascot assets.`);
 
 // Regression: Expo releases SharedObjects before later effect cleanups.
 // Execute the actual lifecycle effects against objects that throw on ANY access
@@ -48,4 +56,3 @@ assert.equal(alive.current, false); assert.equal(removed, 1);
 assert.doesNotThrow(() => background('background'));
 assert.equal(paused, 1);
 console.log('PASS: audio cleanup after native release and late background callback do not access disposed objects.');
-

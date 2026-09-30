@@ -1,0 +1,100 @@
+[
+  {
+    "state": "welcome",
+    "width": 768,
+    "height": 768,
+    "bytes": 130316,
+    "alpha": true
+  },
+  {
+    "state": "cozy_home",
+    "width": 768,
+    "height": 768,
+    "bytes": 127928,
+    "alpha": true
+  },
+  {
+    "state": "reading",
+    "width": 768,
+    "height": 768,
+    "bytes": 115342,
+    "alpha": true
+  },
+  {
+    "state": "listening",
+    "width": 768,
+    "height": 768,
+    "bytes": 114378,
+    "alpha": true
+  },
+  {
+    "state": "speaking",
+    "width": 768,
+    "height": 768,
+    "bytes": 121586,
+    "alpha": true
+  },
+  {
+    "state": "thinking",
+    "width": 768,
+    "height": 768,
+    "bytes": 96462,
+    "alpha": true
+  },
+  {
+    "state": "correct",
+    "width": 768,
+    "height": 768,
+    "bytes": 118484,
+    "alpha": true
+  },
+  {
+    "state": "retry",
+    "width": 768,
+    "height": 768,
+    "bytes": 118368,
+    "alpha": true
+  },
+  {
+    "state": "cafe",
+    "width": 768,
+    "height": 768,
+    "bytes": 112428,
+    "alpha": true
+  },
+  {
+    "state": "travel",
+    "width": 768,
+    "height": 768,
+    "bytes": 127588,
+    "alpha": true
+  },
+  {
+    "state": "city",
+    "width": 768,
+    "height": 768,
+    "bytes": 92134,
+    "alpha": true
+  },
+  {
+    "state": "profile",
+    "width": 768,
+    "height": 768,
+    "bytes": 110732,
+    "alpha": true
+  },
+  {
+    "state": "celebration",
+    "width": 768,
+    "height": 768,
+    "bytes": 136046,
+    "alpha": true
+  },
+  {
+    "state": "sleepy",
+    "width": 768,
+    "height": 768,
+    "bytes": 118248,
+    "alpha": true
+  }
+]
