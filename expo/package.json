@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "expo start --go",
+    "start": "node --require ./scripts/tunnel-dns-retry.cjs ./node_modules/expo/bin/cli start --go",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

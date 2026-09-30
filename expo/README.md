@@ -6,7 +6,7 @@
 
 В Expo Go войди в тот же аккаунт, что и на компьютере: **darinaab01**.
 
-**Адрес:** `exp://c-darinaab01-auurxh-munstk4cq3nsxh4u.on.expo.app`
+**Адрес:** `exp://xqdfll0-darinaab01-8081.exp.direct`
 
 Ссылка проверена 30 сентября 2026 года. Это временный туннель к работающему серверу на компьютере. **Компьютер должен оставаться включённым, с интернетом и запущенным Expo.** GitHub хранит исходники и QR, но не запускает приложение. После перезапуска туннеля адрес может измениться — старый QR тогда нужно заменить.
 
@@ -47,10 +47,11 @@ npm run typecheck
 node node_modules/expo/bin/cli install --check
 node node_modules/expo/bin/cli export --platform ios
 node tests/content.cjs
+node tests/tunnel-dns.cjs
 ```
 
 Экспорт JavaScript-пакета для iOS и проверка типов выполнены на Windows. Туннель и выдача iOS-пакета проверены по HTTP. Реальные динамик, микрофон, вибрация и внешний вид на физическом iPhone требуют проверки на устройстве. Это не сборка IPA через Xcode.
 
 Новые изображения и полные промпты: [ASSETS.md](./ASSETS.md). Все 14 WebP входят в пакет, общий размер около 1,64 МБ. При первом открытии Expo Go загружает пакет и ресурсы с компьютера; это не отдельная установленная офлайн-сборка.
 
-При недоступности ngrok можно использовать новый туннель Expo (экспериментальный): перед `npm start -- --tunnel` в PowerShell выполни `$env:EXPO_UNSTABLE_TUNNEL_V2="1"`. Текущий QR использует этот режим. [Документация Expo](https://expo.dev/changelog/sdk-58-beta#a-faster-more-reliable-expo-cli-tunnel).
+При недоступности ngrok можно использовать новый туннель Expo (экспериментальный): перед `npm start -- --tunnel` в PowerShell выполни `$env:EXPO_UNSTABLE_TUNNEL_V2="1"`. Текущий QR использует обычный ngrok-туннель. [Документация Expo](https://expo.dev/changelog/sdk-58-beta#a-faster-more-reliable-expo-cli-tunnel).
